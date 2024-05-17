@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida China</title>
     <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header id="header">
         <div class="logo">
-            <img src="x" alt="Logo">
+            <img src="static/img/Logo 1.png" alt="Logo">
         </div>
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" class="hamburguesa">&#9776;</label>
         <nav class="navegacion">
             <ul>
                 <li><a href="#">Categorías</a></li>
@@ -20,21 +23,234 @@
             </ul>
         </nav>
         <div class="barra-busqueda">
-            <input type="text" placeholder="Buscar...">
+            <input type="text" placeholder="Buscar tu alimento...">
         </div>
-        <div class="cart">
-            <img src="ruta-a-tu-icono-carrito.png" alt="Carrito">
+        <div class="carrito">
+            <img src="static/img/carrito-de-compras.png" alt="Carrito">
         </div>
     </header>
+    
 
     <!-- Contenido Principal -->
-    <div id="main">
+    <main id="main">
+        <div id="separador-main"></div>
+
+        <section class="carousel">
+            <div id="contenedor-imagen">
+                <img id="imagen" class="fade-in" src="" alt="Imagen">
+                <div class="texto-imagen">Descripcion</div>
+                <div class="boton-imagen">Boton de la categoría</div>
+            </div>
+
+            <button id="retroceder" class="boton-carousel" aria-label="Retroceder">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="avanzar" class="boton-carousel" aria-label="Avanzar">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </section>
+
+        <div class="separador-contenido"></div>
+
+        <section id="categorias">
+            <div id="titulo-categorias">Alimentos - ¿Qué vas a pedir hoy?</div>
+            <div class="contenedor-card-categoria">
+                <a href="#" class="card-categoria">
+                    <p class="nombre-categorias">Hamburguesas</p>
+                    <div class="categoria-fondo">
+                        <img class="imagen-categorias" src="static/img/hamburgesa-sinbg.png" alt="Hamburguesa">
+                    </div>
+                </a>
+                <a href="#" class="card-categoria">
+                    <p class="nombre-categorias">Hamburguesas</p>
+                    <div class="categoria-fondo">
+                        <img class="imagen-categorias" src="static/img/hamburgesa-sinbg.png" alt="Hamburguesa">
+                    </div>
+                </a>
+                <a href="#" class="card-categoria">
+                    <p class="nombre-categorias">Hamburguesas</p>
+                    <div class="categoria-fondo">
+                        <img class="imagen-categorias" src="static/img/hamburgesa-sinbg.png" alt="Hamburguesa">
+                    </div>
+                </a>
+                <a href="#" class="card-categoria">
+                    <p class="nombre-categorias">Hamburguesas</p>
+                    <div class="categoria-fondo">
+                        <img class="imagen-categorias" src="static/img/hamburgesa-sinbg.png" alt="Hamburguesa">
+                    </div>
+                </a>
+                <a href="#" class="card-categoria">
+                    <p class="nombre-categorias">Hamburguesas</p>
+                    <div class="categoria-fondo">
+                        <img class="imagen-categorias" src="static/img/hamburgesa-sinbg.png" alt="Hamburguesa">
+                    </div>
+                </a>
+                <a href="#" class="card-categoria">
+                    <p class="nombre-categorias">Hamburguesas</p>
+                    <div class="categoria-fondo">
+                        <img class="imagen-categorias" src="static/img/hamburgesa-sinbg.png" alt="Hamburguesa">
+                    </div>
+                </a>
+                <a href="#" class="card-categoria">
+                    <p class="nombre-categorias">Hamburguesas</p>
+                    <div class="categoria-fondo">
+                        <img class="imagen-categorias" src="static/img/hamburgesa-sinbg.png" alt="Hamburguesa">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="separador-contenido"></div>
+
+        <section id="desayuno">
+            <div id="titulo-desayuno">
+                <i class="fas fa-coffee"></i> DESAYUNO - ¡Empieza tu día con energía!
+            </div>
+            <div class="contenedor-card-desayuno">
+                <div class="card-desayuno">
+                    <div class="imagen-fondo">
+                        <img src="static/img/tostadas-sinbg.png" alt="Tostadas">
+                    </div>
+                    <div class="info-desayuno">
+                        <p class="nombre-desayuno">Tostadas</p>
+                        <p class="costo-desayuno">$3.50</p>
+                        <p class="duracion-desayuno">Preparación: 10 min</p>
+                    </div>
+                </div>
+                <div class="card-desayuno">
+                    <div class="imagen-fondo">
+                        <img src="static/img/cafe-sinbg.png" alt="Café">
+                    </div>
+                    <div class="info-desayuno">
+                        <p class="nombre-desayuno">Café</p>
+                        <p class="costo-desayuno">$1.50</p>
+                        <p class="duracion-desayuno">Preparación: 5 min</p>
+                    </div>
+                </div>
+                <div class="card-desayuno">
+                    <div class="imagen-fondo">
+                        <img src="static/img/jugo-naranja-sinbg.png" alt="Jugo de Naranja">
+                    </div>
+                    <div class="info-desayuno">
+                        <p class="nombre-desayuno">Jugo de Naranja</p>
+                        <p class="costo-desayuno">$2.00</p>
+                        <p class="duracion-desayuno">Preparación: 5 min</p>
+                    </div>
+                </div>
+                <div class="card-desayuno">
+                    <div class="imagen-fondo">
+                        <img src="static/img/huevos-revueltos-sinbg.png" alt="Huevos Revueltos">
+                    </div>
+                    <div class="info-desayuno">
+                        <p class="nombre-desayuno">Huevos Revueltos</p>
+                        <p class="costo-desayuno">$4.00</p>
+                        <p class="duracion-desayuno">Preparación: 15 min</p>
+                    </div>
+                </div>
+                <div class="card-desayuno">
+                    <div class="imagen-fondo">
+                        <img src="static/img/yogur-sinbg.png" alt="Yogur">
+                    </div>
+                    <div class="info-desayuno">
+                        <p class="nombre-desayuno">Yogur</p>
+                        <p class="costo-desayuno">$2.50</p>
+                        <p class="duracion-desayuno">Preparación: 5 min</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="separador-contenido"></div>
+
+        <section id="descuentos">
+            <div id="titulo-descuentos">
+                <i class="fas fa-tags"></i> DESCUENTOS - ¡Aprovecha nuestras ofertas!
+            </div>
+            <div class="contenedor-card-descuentos">
+                <div class="card-descuento">
+                    <div class="imagen-fondo">
+                        <img src="static/img/hamburguesa-descuento.png" alt="Hamburguesa">
+                    </div>
+                    <div class="info-descuento">
+                        <p class="nombre-descuento">Hamburguesa</p>
+                        <p class="descuento">-20%</p>
+                        <p class="precio-original">$5.00</p>
+                    </div>
+                </div>
+                <div class="card-descuento">
+                    <div class="imagen-fondo">
+                        <img src="static/img/pizza-descuento.png" alt="Pizza">
+                    </div>
+                    <div class="info-descuento">
+                        <p class="nombre-descuento">Pizza</p>
+                        <p class="descuento">-15%</p>
+                        <p class="precio-original">$8.00</p>
+                    </div>
+                </div>
+                <div class="card-descuento">
+                    <div class="imagen-fondo">
+                        <img src="static/img/ensalada-descuento.png" alt="Ensalada">
+                    </div>
+                    <div class="info-descuento">
+                        <p class="nombre-descuento">Ensalada</p>
+                        <p class="descuento">-10%</p>
+                        <p class="precio-original">$4.50</p>
+                    </div>
+                </div>
+                <div class="card-descuento">
+                    <div class="imagen-fondo">
+                        <img src="static/img/sandwich-descuento.png" alt="Sándwich">
+                    </div>
+                    <div class="info-descuento">
+                        <p class="nombre-descuento">Sándwich</p>
+                        <p class="descuento">-25%</p>
+                        <p class="precio-original">$6.00</p>
+                    </div>
+                </div>
+                <div class="card-descuento">
+                    <div class="imagen-fondo">
+                        <img src="static/img/bebida-descuento.png" alt="Bebida">
+                    </div>
+                    <div class="info-descuento">
+                        <p class="nombre-descuento">Bebida</p>
+                        <p class="descuento">-30%</p>
+                        <p class="precio-original">$2.50</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="separador-contenido"></div>
+
+        <section id="suscripcion">
+            <div id="imagen-suscripcion">
+                <img src="static/img/prmium.png" alt="Persona disfrutando de la comida">
+            </div>
+            <div id="contenido-suscripcion">
+                <div id="titulo-suscripcion">
+                    <i class="fas fa-crown"></i> ¡Únete a nuestra membresía premium!
+                </div>
+                <p>Recibe promociones exclusivas y ofertas especiales directamente en tu correo electrónico.</p>
+                <button class="boton-suscripcion">¡Suscríbete ahora!</button>
+            </div>
+        </section>
         
-    </div>
+        <div class="separador-contenido"></div>
+        
+    </main>
 
-    <!-- pie -->
+    <!-- Pie -->
     <footer id="footer">
-
+        <div class="contenido-footer">
+            <p>Dirección: Avenida 9 de Julio 1368, Bueno Aires, Argentina</p>
+            <p>Teléfono: +123456789</p>
+            <p>Correo electrónico: contactobambu@bambusabores.com</p>
+        </div>
+        <div class="contenido-footer">
+            <p>&copy; 2024 Bambu y Sabores. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <script src="./static/js/script.js"></script>
 </body>
 </html>
