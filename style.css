@@ -4,12 +4,57 @@
     box-sizing: border-box;
 
 }
-
-body {
-    background-image: url(img/comida1.jpg);
+:root {
+    --color-primario: #74D23A;
+    --color-primario-2: #A6D83C;
+    --color-secundario: #FCE308;
+    --categoria-fondo: #FFD700;
 }
 
-.form-register {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.separador-contenido{
+    width: 100%;
+    height: 40px;
+}
+
+@keyframes animacion1 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes animacion2 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(5px, 0px) rotate(0deg); }
+    75% { transform: translate(-5px, 0px) rotate(0deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/*imagen*/
+
+body {
+    background-image: url(/img/comida1.jpg);
+    
+   
+  
+}
+
+/*formulario*/
+
+#formulario {
     width: 400px;
     background: green;
     padding: 30px;
@@ -25,16 +70,16 @@ body {
     box-shadow: 7px 13px 37px #000;
 
 }
-.form-register h4 {
-    font-size: 15px;
+#formulario h4 {
+    font-size: 16px;
     margin-bottom: 30px;
 
 
 
 }
-.form {
+#nombre, #apellido, #email, #tel {
     width: 100%;
-    background: ;
+    background: white;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 20px;
@@ -44,27 +89,188 @@ body {
 }
 
 
-.form-register p {
+.frase {
     height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 40px;
 }
-.form-register a {
+.frase a {
     color: white;
     text-decoration: none;
 }
-.form-register a:hover {
+.frase a:hover {
     color: white;
     text-decoration: underline;
 }
-.form-register .boton {
+#formulario button {
     width: 100%;
     background: white;
     border: none;
-    padding: 12px;
+    padding: 16px;
     color: green;
     margin: 16px 0;
     font-size: 16px;
+    border-radius: 4px;
 
 }
+/* Datos de error del formulario*/
+
+  #error{
+    width: 200px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin: auto;
+    padding: 15px;
+  }
+  
+  /*Responsive para cel*/
+
+  @media (max-width:600px) {
+    body {
+        background: #000;
+    }
+    
+    } 
+    
+/*header*/
+
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background-image: linear-gradient(to right, var(--color-primario) 10%, var(--color-primario-2) 40%, var(--color-secundario) 60%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    .logo img {
+        height: 55px;
+        border-radius: 25px;
+        margin-left: 40px;
+    }
+    
+    .logo:hover {
+        animation: animacion2 0.25s infinite;
+        cursor: pointer;
+    }
+    
+    .navegacion {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navegacion a {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    
+    .navegacion ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+    }
+    
+    .navegacion ul li {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    
+    .barra-busqueda {
+        flex-grow: 4;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .barra-busqueda input {
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        outline: none;
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+    }
+    
+    /* Logo carrito */
+    .carrito img {
+        height: 30px;
+        margin-right: 10px; 
+        margin-left: 10px;
+    }
+    
+    .carrito:hover {
+        animation: animacion1 0.25s infinite;
+    }
+    
+    /* Estilos para el menú desplegable */
+    
+    #toggle-menu{
+        display: none;
+    }
+    
+    .hamburguesa {
+        display: none;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .navegacion ul {
+            display: none; /* Ocultar lista de navegación en pantallas pequeñas */
+            position: absolute;
+            top: 65px;
+            left: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+        }
+    }
+
+    /*footer*/
+    
+    #footer {
+        position: relative;
+        height: 150px; /* Altura ajustable según el contenido */
+        width: 100%;
+        background-image: linear-gradient(to right, var(--color-primario) 10%, var(--color-primario-2) 40%, var(--color-secundario) 60%);
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .contenido-footer {
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    /* Media queries para diferentes tamaños de pantalla */
+    
+    /* PC */
+    @media only screen and (min-width: 1024px) {
+        
+    }
+    
+    /* Tablets */
+    @media only screen and (max-width: 1023px) {
+        
+        #footer {
+            height: 200px;
+        }
+    }
+    
+    /* Celulares */
+    @media only screen and (max-width: 767px) {
+        
+        #footer {
+            height: 250px;
+        }
+    }

@@ -3,25 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Formulario</title>
 </head>
+ <!-- Encabezado -->
+ <header id="header">
+  <div class="logo">
+      <img src="static/img/Logo 1.png" alt="Logo">
+  </div>
+  <input type="checkbox" id="toggle-menu">
+  <label for="toggle-menu" class="hamburguesa">&#9776;</label>
+  <nav class="navegacion">
+      <ul>
+          <li><a href="#">Categorías</a></li>
+          <li><a href="#">Suscripción</a></li>
+          <li><a href="#">¿Quiénes somos?</a></li>
+      </ul>
+  </nav>
+  <div class="barra-busqueda">
+      <input type="text" placeholder="Buscar tu alimento...">
+  </div>
+  <div class="carrito">
+      <img src="static/img/carrito-de-compras.png" alt="Carrito">
+  </div>
+</header>
+
+
 <body>
     
-    <section class="form-register">
-        <h4>Formulario Registro</h4>
+    <section>
         
-        <input class="form" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
-        <input class="form" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
-        <input class="form" type="email" name="email" id="email" placeholder="Ingrese su email">
-        <input class="form" type="password" name="password" id="password" placeholder="Ingrese su contraseña">
-        <input class="form" type="dni" name="dni" id="dni" placeholder="Ingrese su DNI">
-        <p>Estoy de acuerdo con <a href="#">Términos y condiciones</a> </p>
-        <input class="boton" type="submit" value="Registrar">
-        <p><a href="#">¿Ya tengo cuenta?</a></p>
-       
+    <form id="formulario" method="post">
+        <h4>Formulario Registro</h4>
+        <p>
+            
+          <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre"/>
+        </p>
+        <p>
+            
+            <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido"/>
+          </p>
+        <p>
+          
+          <input id="email" name="email" type="text" placeholder="Ingrese su email"/> </p>
+        
+            
+            <input id="tel" name="tel" type="text" placeholder="Ingrese su número de teléfono"/></p>
+        
+          <p class="frase">Estoy de acuerdo con <a href="#">Términos y condiciones</a></p>
 
+          <button type="submit">Registrar</button>
+        
+        
+        <p id="error" class="error"></p>
+        
+      </form>
+      
     </section>
-    
-</body>
-</html>
+    <footer id="footer">
+  <div class="contenido-pie">
+      <p>Dirección: Avenida 9 de Julio 1368, Bueno Aires, Argentina</p>
+      <p>Teléfono: +123456789</p>
+      <p>Correo electrónico: contactobambu@bambusabores.com</p>
+  </div>
+  <div class="contenido-footer">
+      <p>&copy; 2024 Bambu y Sabores. Todos los derechos reservados.</p>
+  </div>
+</footer>
+      
+  <script src="/script.js></script>
+
+  </body>
+
+  </html>
