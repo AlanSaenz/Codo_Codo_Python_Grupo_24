@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Nunito',sans-serif; */
+    /*font-family: 'Nunito',sans-serif;*/
 }
 
 /* Header y Nav de la pagina de la pagina */
@@ -23,6 +23,7 @@
     justify-content: space-between;
     padding: 0 20px;
 }
+
 
 /* Logo de la pagina */
 .logo img {
@@ -57,84 +58,148 @@
 
 /* Contenido Principal de la pagina */
 
-#main{
-       width: 100%;
-       padding-top: 80px;
+#main {
+    width: 100%;
+    padding-top: 80px;
+
 }
 
 /*Párrafos*/
 /*Sobre nosotros y somos petfriendly*/ 
 /*Nuestro compromosimo y visitanos */
-.h1{
+
+#div{
+    height:auto;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;  
+
+}
+
+#section{
+    height: auto;
+    width: 100%;
+    margin:5px;
+    border: 5px;
+    padding: 5px;
+}
+
+.div{    
     height: auto;
     width: 50%;
-    margin: 30;
-    padding: 10px 0;
-    background-color: #74D23A;
-   
+    display: flex;
+   top: 0;
+    
 }
 
-.banner{
-    height: 450px;
+
+.h1{
+    height: 60px;
     width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 15px ;
+    background-color: #74D23A;
+          
 }
+
 .sobrenosotros{
     height: auto;
-    width: auto;
-    display: flex;
-    font-size: 15px;
-    margin: 10x 0px;
-}
-.somospetfrindly{
-    height: auto;
-    width: auto;
-    display: flex;
-    font-size: 5px;
-    margin: 0x 0px;
-}
-.nuestrocompromiso{
-    height: auto;
-    width: auto;
+    width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: row-reverse;
-    font-size: 15px;
-    margin: 0x 0px;
-} 
-.visitanos{
-    height: auto;
-    width: auto;
-    display: flex;
-    font-size: 15px;
-    margin: 0x 0px;
+    font-size: 18px;
+    margin: 10px;
 }
 
+
+
 .imgsomos{
-    width: 150px;
-    height: 200px;
-    padding: 20px 0;
+    width:55%;
+    height: auto;
+    display: flex;
+    padding-left: 30px;
+    margin: 3px;
+    margin-right: 5px;
+    margin-left: 5px;    
+    transform: translateY(-93px);
+}
+
+.somospetfriendly{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 18px;
+    margin: 10px;
 }
 
 .imgpet{
-    width: 150px;
-    height: 200px;
-    padding: 20px 0;
+    width: 55%;
+    height: auto;
+    display: flex;
+    padding-left: 30px;
+    margin: 3px;
+    margin-right: 5px;
+    margin-left: 5px; 
+    transform: translateY(-93px);  
 }
+
+.nuestrocompromiso{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 18px;
+    margin: 10px;
+} 
 
 .imgcompromiso{
-    width: 150px;
-    height: 200px;
-    padding: 20px 0;
+    width: 55%;
+    height: auto;
+    display: flex;
+    padding-left: 30px;
+    margin: 3px;
+    margin-right: 5px;
+    margin-left: 5px; 
+    transform: translateY(-93px);  
 }
 
-#quienessomos{
-    position: absolute;
-    top: 50%;
-    left: 50%;   
-    border: 1px solid black; 
-    border-radius: 15px;
-    margin: 5px;
-    z-index: 999;
 
+.visitanos{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.mapa{
+    width: 55%;
+    height: auto;
+    display: flex;
+    padding-left: 30px;
+    margin: 3px;
+    margin-right: 5px;
+    margin-left: 5px;   
+    transform: translateY(-93px);
+}
+
+
+#p{
+    height: auto;
+    width: 50%;   
 }
 
 /* Footer de la pagina */
