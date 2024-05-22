@@ -71,10 +71,8 @@
 #div{
     height:auto;
     width: 100%;
-    padding-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;  
+    padding: 50px;
+    margin: 50px; 
 
 }
 
@@ -84,20 +82,19 @@
     margin:5px;
     border: 5px;
     padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .div{    
     height: auto;
-    width: 50%;
-    display: flex;
-   top: 0;
-    
+    width: 50%;   
 }
 
 
 .h1{
     height: 60px;
-    width: 100%;
+    width: 90%;
     top: 0;
     left: 0;
     display: flex;
@@ -109,7 +106,7 @@
           
 }
 
-.sobrenosotros{
+.section{
     height: auto;
     width: 100%;
     padding: 10px;
@@ -119,83 +116,12 @@
     margin: 10px;
 }
 
-
-
-.imgsomos{
-    width:55%;
-    height: auto;
-    display: flex;
-    padding-left: 30px;
-    margin: 3px;
-    margin-right: 5px;
-    margin-left: 5px;    
-    transform: translateY(-93px);
-}
-
-.somospetfriendly{
-    height: auto;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    font-size: 18px;
-    margin: 10px;
-}
-
-.imgpet{
+.img{
     width: 55%;
     height: auto;
-    display: flex;
-    padding-left: 30px;
     margin: 3px;
-    margin-right: 5px;
-    margin-left: 5px; 
-    transform: translateY(-93px);  
+    transform: translateY(-83px);  
 }
-
-.nuestrocompromiso{
-    height: auto;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    font-size: 18px;
-    margin: 10px;
-} 
-
-.imgcompromiso{
-    width: 55%;
-    height: auto;
-    display: flex;
-    padding-left: 30px;
-    margin: 3px;
-    margin-right: 5px;
-    margin-left: 5px; 
-    transform: translateY(-93px);  
-}
-
-
-.visitanos{
-    height: auto;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    font-size: 18px;
-    margin: 10px;
-}
-
-.mapa{
-    width: 55%;
-    height: auto;
-    display: flex;
-    padding-left: 30px;
-    margin: 3px;
-    margin-right: 5px;
-    margin-left: 5px;   
-    transform: translateY(-93px);
-}
-
 
 #p{
     height: auto;
