@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes somos</title>
+    <link rel="stylesheet" href="/static/css/header-footer.css">
     <link rel="stylesheet" href="/static/css/quienes-somos-style.css">
     <link rel="shortcut icon" href="/static/Img/fideos.ico.ico" type="img/x-icon">
 </head>
 
 <body>
     <header id="header">
-        <div class="logo">
-            <img src="/static/Img/Logo_1.png" alt="Logo">
-        </div>
+        <a class="logo" href="/index.html">
+            <img src="/static/img/Logo_1.png" alt="Logo">
+        </a>
         <nav class="navegacion">
             <ul>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Suscripción</a></li>
-                <li><a href="#">¿Quiénes somos?</a></li>
+                <li><a href="/templates/categoria.html?clave=tradicional-china">Categorías</a></li>
+                <li><a href="/templates/formulario.html">Suscripción</a></li>
+                <li><a href="/templates/quienes-somos.html">¿Quiénes somos?</a></li>
             </ul>
         </nav>
         <div class="barra-busqueda">
-            <input type="text" placeholder="Buscar...">
+            <i class="fa fa-search" aria-hidden="true"></i> <!-- ícono de FontAwesome -->
+            <input type="text" placeholder="Buscar tu alimento...">
         </div>
-        <div class="cart">
-            <img src="/static/Img/carrito-de-compras.png" alt="Carrito">
+        <div id="espacio-celular"></div>
+        <div class="carrito">
+            <img src="/static/img/carrito-de-compras.png" alt="Carrito">
         </div>
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" class="hamburguesa">&#9776;</label>
+        <nav class="menu-desplegable">
+            <ul>
+                <li><a href="/templates/categoria.html?clave=tradicional-china">Categorías</a></li>
+                <li><a href="/templates/formulario.html">Suscripción</a></li>
+                <li><a href="/templates/quienes-somos.html">¿Quiénes somos?</a></li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -64,9 +76,16 @@
         </section>
     </main>
 
-    <!-- pie -->
+    <!-- Pie -->
     <footer id="footer">
-
+        <div class="contenido-footer">
+            <p>Dirección: Avenida 9 de Julio 1368, Bueno Aires, Argentina</p>
+            <p>Teléfono: +123456789</p>
+            <p>Correo electrónico: contactobambu@bambusabores.com</p>
+        </div>
+        <div class="contenido-footer">
+            <p>&copy; 2024 Bambu y Sabores. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 

@@ -76,6 +76,10 @@ function iniciarCarousel() {
     });
 }
 
+window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+});
+
 window.onload = function() {
     iniciarCarousel();
     agregarTarjetas(categorias);

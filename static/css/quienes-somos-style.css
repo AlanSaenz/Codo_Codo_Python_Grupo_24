@@ -1,66 +1,10 @@
-/* :root{
-    
-} */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*font-family: 'Nunito',sans-serif;*/
-}
-
-/* Header y Nav de la pagina de la pagina */
-
-#header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-image: linear-gradient(to right, #74D23A 10%, #A6D83C 40%, #FCE308 60%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-
-/* Logo de la pagina */
-.logo img {
-    height: 50px; 
-}
-
-.navegacion a{
-    text-decoration: none;
-    color: black;
-}
-
-.navegacion ul {
-    list-style: none;
-    display: flex;
-}
-
-.navegacion ul li {
-    margin-right: 20px;
-}
-
-.barra-busqueda input {
-    padding: 8px 30px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-
-/* Logo carrito */
-.cart img {
-    height: 30px;
+:root {
+    --color-primario: #74D23A;
+    --color-primario-2: #A6D83C;
+    --color-secundario: #FCE308;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
 }
 
@@ -68,6 +12,7 @@ body {
 #main {
     width: 100%;
     padding-top: 80px;
+    line-height: 1.6;
 }
 
 /* Secciones de información */
@@ -119,7 +64,7 @@ body {
     margin: 10px 0;
 }
 
-/* Media queries para responsive design */
+/* Media queries */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -130,13 +75,4 @@ body {
         height: auto;
         margin: 0 auto;
     }
-}
-
-/* Footer de la pagina */
-
-#footer{
-    position: absolute;
-    height: 200px;
-    width: 100%;
-    background-image: linear-gradient(to right, #74D23A 10%, #A6D83C 40%, #FCE308 60%);
 }

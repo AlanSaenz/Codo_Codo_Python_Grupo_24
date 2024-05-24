@@ -4,31 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/header-footer.css">
     <link rel="stylesheet" href="/static/css/formulario-style.css">
     <title>Formulario</title>
 </head>
 
 <body>
-    <!-- Encabezado -->
     <header id="header">
-        <div class="logo">
+        <a class="logo" href="/index.html">
             <img src="/static/img/Logo_1.png" alt="Logo">
-        </div>
-        <input type="checkbox" id="toggle-menu">
-        <label for="toggle-menu" class="hamburguesa">&#9776;</label>
+        </a>
         <nav class="navegacion">
             <ul>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Suscripción</a></li>
-                <li><a href="#">¿Quiénes somos?</a></li>
+                <li><a href="/templates/categoria.html?clave=tradicional-china">Categorías</a></li>
+                <li><a href="/templates/formulario.html">Suscripción</a></li>
+                <li><a href="/templates/quienes-somos.html">¿Quiénes somos?</a></li>
             </ul>
         </nav>
         <div class="barra-busqueda">
+            <i class="fa fa-search" aria-hidden="true"></i> <!-- ícono de FontAwesome -->
             <input type="text" placeholder="Buscar tu alimento...">
         </div>
+        <div id="espacio-celular"></div>
         <div class="carrito">
             <img src="/static/img/carrito-de-compras.png" alt="Carrito">
         </div>
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" class="hamburguesa">&#9776;</label>
+        <nav class="menu-desplegable">
+            <ul>
+                <li><a href="/templates/categoria.html?clave=tradicional-china">Categorías</a></li>
+                <li><a href="/templates/formulario.html">Suscripción</a></li>
+                <li><a href="/templates/quienes-somos.html">¿Quiénes somos?</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="separador-header"></div>
@@ -82,8 +91,9 @@
         <p id="error" class="error"></p>
     </form>    
 
+    <!-- Pie -->
     <footer id="footer">
-        <div class="contenido-pie">
+        <div class="contenido-footer">
             <p>Dirección: Avenida 9 de Julio 1368, Bueno Aires, Argentina</p>
             <p>Teléfono: +123456789</p>
             <p>Correo electrónico: contactobambu@bambusabores.com</p>

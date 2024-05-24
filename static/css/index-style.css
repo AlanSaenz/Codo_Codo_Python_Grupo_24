@@ -6,6 +6,16 @@
     --desayuno-fondo: #FFF4E6;
 }
 
+/* Animacion de que carga la pagina */
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
 /* Contenido Principal de la pagina */
 #main-index {
     width: 100%;
