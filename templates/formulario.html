@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/formulario-style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header id="header">
+        <div class="logo">
+            <img src="/static/img/Logo_1.png" alt="Logo">
+        </div>
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" class="hamburguesa">&#9776;</label>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Suscripción</a></li>
+                <li><a href="#">¿Quiénes somos?</a></li>
+            </ul>
+        </nav>
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar tu alimento...">
+        </div>
+        <div class="carrito">
+            <img src="/static/img/carrito-de-compras.png" alt="Carrito">
+        </div>
+    </header>
+
+    <div class="separador-header"></div>
+
+    <form id="formulario" method="post">
+        <h4>Formulario Registro</h4>
+        <p>
+            <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre">
+        </p>
+        <p>
+            <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido">
+        </p>
+        <p>
+            <input id="email" name="email" type="email" placeholder="Ingrese su email">
+        </p>
+        <p>
+            <input id="dni" name="dni" type="number" placeholder="Ingrese su numero de documento">
+        </p>
+        <p>
+            <input id="tel" name="tel" type="number" placeholder="Ingrese su número de teléfono">
+        </p>
+        <p>
+            <label class="informacion">Género:</label><br>
+            <input type="radio" id="masculino" class="genero" name="genero" value="masculino"> Masculino
+            <input type="radio" id="femenino" class="genero" name="genero" value="femenino"> Femenino
+            <input type="radio" id="no-binario" class="genero" name="genero" value="no-binario"> No binario
+        </p>
+        <p>
+            <br>
+            <label class="informacion" for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad">
+                <option value="">Seleccione su nacionalidad</option>
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="peru">Perú</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="venezuela">Venezuela</option>
+            </select>
+        </p>
+        <p>
+            <label class="informacion" for="foto">Cargar Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </p>
+        <p class="frase">Estoy de acuerdo con <a href="#">Términos y condiciones</a></p>
+        <button type="submit">Registrar</button>
+        <p id="error" class="error"></p>
+    </form>    
+
+    <footer id="footer">
+        <div class="contenido-pie">
+            <p>Dirección: Avenida 9 de Julio 1368, Bueno Aires, Argentina</p>
+            <p>Teléfono: +123456789</p>
+            <p>Correo electrónico: contactobambu@bambusabores.com</p>
+        </div>
+        <div class="contenido-footer">
+            <p>&copy; 2024 Bambu y Sabores. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/formulario-script.js"></script>
+
+</body>
+
+</html>
