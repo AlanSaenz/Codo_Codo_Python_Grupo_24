@@ -56,76 +56,80 @@
     height: 30px;
 }
 
-/* Contenido Principal de la pagina */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
+/* Contenido Principal de la página */
 #main {
     width: 100%;
     padding-top: 80px;
-
 }
 
-/*Párrafos*/
-/*Sobre nosotros y somos petfriendly*/ 
-/*Nuestro compromosimo y visitanos */
-
-#div{
-    height:auto;
-    width: 100%;
-    padding: 50px;
-    margin: 50px; 
-
+/* Secciones de información */
+.info-section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-#section{
-    height: auto;
-    width: 100%;
-    margin:5px;
-    border: 5px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.div{    
-    height: auto;
-    width: 50%;   
-}
-
-
-.h1{
-    height: 60px;
-    width: 90%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 15px ;
+.info-section h1 {
     background-color: #74D23A;
-          
-}
-
-.section{
-    height: auto;
-    width: 100%;
+    color: white;
     padding: 10px;
+    margin: 0 -20px 20px -20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.contenido {
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenido img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.contenido p {
+    flex: 1;
+    padding: 20px;
     font-size: 18px;
-    margin: 10px;
+    color: #333;
 }
 
-.img{
-    width: 55%;
-    height: auto;
-    margin: 3px;
-    transform: translateY(-83px);  
+.contenido iframe {
+    max-width: 50%;
+    height: 350px;
+    max-height: 350px;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
-#p{
-    height: auto;
-    width: 50%;   
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .contenido img, .contenido iframe {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }
 
 /* Footer de la pagina */
