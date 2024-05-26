@@ -20,7 +20,6 @@ body {
     flex-direction: column;
     align-items: end;
     justify-content: flex-end;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
 
@@ -54,6 +53,11 @@ body {
     color: #000;
 }
 
+#contenedor-genero{
+    display: flex;
+    flex-direction: row;
+}
+
 #nacionalidad, #foto{
     margin-top: 5px;
 }
@@ -80,6 +84,7 @@ input[type="radio"] {
 .frase a {
     color: white;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .frase a:hover {
@@ -111,4 +116,38 @@ input[type="radio"] {
     font-size: 1.5em;
     font-weight: bold;
     padding: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+    #formulario {
+        min-width: 250px;
+        width: 80%;
+        margin: 50px auto;
+    }
+    #formulario p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #nombre, #apellido, #email, #tel, #dni, #nacionalidad, #foto {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #contenedor-genero{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 30%;
+    }
+
+    .frase {
+        margin: auto;
+        height: 60px;
+        font-size: 1em;
+        line-height: 25px;
+    }
+
 }
