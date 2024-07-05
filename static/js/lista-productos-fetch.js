@@ -1,8 +1,8 @@
 // Direccion utilizando XAMPP local
-// const BASEURL = 'http://127.0.0.1:5000';
+const BASEURL = 'http://127.0.0.1:5000';
 
 // Direccion usando PythonAnyware
-const BASEURL = 'https://asaenz.pythonanywhere.com';
+// const BASEURL = 'https://asaenz.pythonanywhere.com';
 
 async function fetchData(url, method, data = null) {
   const options = {
@@ -125,21 +125,21 @@ function saberCategoria_id(id) {
 function imagenPredeterminadaUrl(categoriaId) {
   switch (categoriaId) {
       case '1':
-          return "/static/img/Categorias/tradicional-china.jpg";
+          return "/Codo_Codo_Python_Grupo_24/static/img/Categorias/tradicional-china.jpg";
       case '2':
-          return "/static/img/Categorias/hamburguesas.jpg";
+          return "/Codo_Codo_Python_Grupo_24/static/img/Categorias/hamburguesas.jpg";
       case '3':
-          return "/static/img/Categorias/tradicional-argentina.jpg";
+          return "/Codo_Codo_Python_Grupo_24/static/img/Categorias/tradicional-argentina.jpg";
       case '4':
-          return "/static/img/Categorias/bebidas.jpg";
+          return "/Codo_Codo_Python_Grupo_24/static/img/Categorias/bebidas.jpg";
       case '5':
-          return "/static/img/Categorias/pollo-pescado.jpg";
+          return "/Codo_Codo_Python_Grupo_24/static/img/Categorias/pollo-pescado.jpg";
       case '6':
-          return "/static/img/Categorias/ensaladas-verduras.jpg";
+          return "/Codo_Codo_Python_Grupo_24/static/img/Categorias/ensaladas-verduras.jpg";
       case '7':
-          return "/static/img/Categorias/postres.jpg";
+          return "/Codo_Codo_Python_Grupo_24/static/img/Categorias/postres.jpg";
       case '8':
-          return "/static/img/Categorias/desayunos.jpg";
+          return "/Codo_Codo_Python_Grupo_24/static/img/Categorias/desayunos.jpg";
       default:
           return "";
   }

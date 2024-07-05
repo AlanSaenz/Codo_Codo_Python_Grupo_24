@@ -1,8 +1,8 @@
 // Direccion utilizando XAMPP local
-// const BASEURL = 'http://127.0.0.1:5000';
+const BASEURL = 'http://127.0.0.1:5000';
 
 // Direccion usando PythonAnyware
-const BASEURL = 'https://asaenz.pythonanywhere.com';
+// const BASEURL = 'https://asaenz.pythonanywhere.com';
 
 async function fetchData(url, method, data = null) {
     const options = {
@@ -66,7 +66,7 @@ async function cargaCategoria() {
         card.style.backgroundColor = categoria.color_Fondo;
         card.innerText = categoria.nombre;
         card.onclick = () => {
-            window.location.href = `/templates/categoria.html?clave=${categoria.ID_categoria}`;
+            window.location.href = `/Codo_Codo_Python_Grupo_24/templates/categoria.html?clave=${categoria.ID_categoria}`;
         };
         listaCategorias.appendChild(card);
     });
